@@ -3,7 +3,11 @@
 OpenGL Load Wavefront 3D Model 
 
 ## How to build:
-- Set up OpenGL, GLUT
+- Set up OpenGL, GLUT 
+```
+sudo apt-get update
+sudo apt-get install mesa-common-dev libglu1-mesa-dev freeglut3-dev
+```
 - Clone this project and go to source
 `git clone https://github.com/WHKnightZ/OpenGL-Load-Model.git && cd OpenGL-Load-Model`
 - Build with make
