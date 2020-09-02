@@ -4,8 +4,8 @@ OpenGL Load Wavefront 3D Model
 
 ## How to build:
 - Set up OpenGL, GLUT
-- Clone this project
-`git clone https://github.com/WHKnightZ/OpenGL-Load-Model.git`
+- Clone this project and go to source
+`git clone https://github.com/WHKnightZ/OpenGL-Load-Model.git && cd OpenGL-Load-Model`
 - Build with make
 `make`
 - Or build by g++
