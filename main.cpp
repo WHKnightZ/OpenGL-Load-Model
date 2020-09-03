@@ -2,7 +2,7 @@
 
 int POS_X, POS_Y;
 
-std::string model_name = "Models/b.obj";
+std::string model_name = "Models/Lowpoly_Tree.obj";
 
 float offset_y, zoom_distance, angle_x = 30.0f, angle_y = 0.0f;
 GLfloat light_pos[] = {-100.0f, 100.0f, 100.00f, 1.0f};
@@ -111,7 +111,7 @@ int main(int argc, char **argv) {
     POS_Y = (glutGet(GLUT_SCREEN_HEIGHT) - HEIGHT) >> 1;
     glutInitWindowPosition(POS_X, POS_Y);
     glutInitWindowSize(WIDTH, HEIGHT);
-    glutCreateWindow("Catch Flies");
+    glutCreateWindow("Load Model");
     init();
     glutDisplayFunc(display);
     glutMouseFunc(mouse);
