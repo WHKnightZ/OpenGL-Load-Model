@@ -2,6 +2,11 @@
 
 OpenGL Load Wavefront 3D Model 
 
+## How to use:
+- Choose model to display: `std::string model_name = "Models/Model_Name.obj";`
+- Drag Right mouse to rotate
+- Scroll mouse to zoom in/out
+
 ## How to build:
 - Set up OpenGL, GLUT 
 ```
