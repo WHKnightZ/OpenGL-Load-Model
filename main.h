@@ -204,7 +204,7 @@ class Model {
     }
 
   public:
-    float base_y, base_z;
+    float pos_x, pos_y, pos_z;
 
     void load(const char *filename) {
         std::string tmp = filename;
@@ -230,7 +230,7 @@ class Model {
         float a, b, c;
         char str[40];
 
-        base_y = 0.0f;
+        pos_x = pos_y = 0.0f;
 
         float sum_x = 0.0f, sum_y = 0.0f, sum_z = 0.0f;
 
@@ -246,11 +246,12 @@ class Model {
                         sum_y += b;
                     else
                         sum_y -= b;
-                    base_y += b;
                     if (c > 0.0f)
                         sum_z += c;
                     else
                         sum_z -= c;
+                    pos_x += a;
+                    pos_y += b;
                     vertices.push_back(new float[3]{a, b, c});
                 } else if (line[1] == 't') {
                     sscanf(line.c_str(), "vt %f %f", &a, &b);
@@ -345,12 +346,15 @@ class Model {
         sum_x /= vertices.size();
         sum_y /= vertices.size();
         sum_z /= vertices.size();
-        base_y /= vertices.size();
-        base_y = -base_y;
-        base_z = -sqrt(sum_x * sum_x + sum_y * sum_y + sum_z * sum_z) * 15;
+        pos_x /= vertices.size();
+        pos_x = -pos_x;
+        pos_y /= vertices.size();
+        pos_y = -pos_y;
+        pos_z = -sqrt(sum_x * sum_x + sum_y * sum_y + sum_z * sum_z) * 15;
 
-        printf("Offset y base: %f\n", base_y);
-        printf("Offset z base: %f\n", base_z);
+        printf("Pos_X: %f\n", pos_x);
+        printf("Pos_Y: %f\n", pos_y);
+        printf("Pos_Z: %f\n", pos_z);
 
         for (Material &material : materials) {
             delete material.ambient;
