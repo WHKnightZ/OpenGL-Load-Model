@@ -34,7 +34,6 @@ void init() {
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glutIgnoreKeyRepeat(GL_TRUE);
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_DEPTH_TEST);
 
