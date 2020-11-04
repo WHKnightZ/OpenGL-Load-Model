@@ -2,7 +2,7 @@
 
 int POS_X, POS_Y;
 
-std::string model_name = "Models/Lowpoly_Tree.obj";
+std::string model_name = "Models/Earth.obj";
 
 GLfloat light_pos[] = {-10.0f, 10.0f, 100.00f, 1.0f};
 
