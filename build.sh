@@ -1,1 +1,1 @@
-g++ main.cpp -o main.exe -std=c++11 -lGL -lGLU -lglut && ./main.exe
+g++ main.cpp -o load-model.AppImage -std=c++11 -lGL -lGLU -lglut && ./load-model.AppImage
