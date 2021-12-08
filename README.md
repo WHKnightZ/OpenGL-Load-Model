@@ -13,6 +13,11 @@ OpenGL Load Wavefront 3D Model
 sudo apt-get update
 sudo apt-get install mesa-common-dev libglu1-mesa-dev freeglut3-dev
 ```
+For Arch Linux:
+```
+sudo pacman -Syu && sudo pacman -S mesa freeglut // Without yay installed
+yay && yay -S mesa freeglut //yay installed
+```
 - Clone Library
 `git clone https://github.com/WHKnightZ/Library`
 - Clone this project and go to source
