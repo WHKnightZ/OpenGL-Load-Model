@@ -14,9 +14,10 @@ sudo apt-get update
 sudo apt-get install mesa-common-dev libglu1-mesa-dev freeglut3-dev
 ```
 For Arch Linux:
+By default mesa should be installed, and libglu1 is included in [mesa package](https://archlinux.org/packages/extra/x86_64/mesa/). So you don't need to manually install it  
 ```
 sudo pacman -Syu && sudo pacman -S mesa freeglut // Without yay installed
-yay && yay -S mesa freeglut //yay installed
+yay && yay -S mesa freeglut //With yay installed
 ```
 - Clone Library
 `git clone https://github.com/WHKnightZ/Library`
